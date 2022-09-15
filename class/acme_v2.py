@@ -411,9 +411,9 @@ class acme_v2:
     # 设置验证信息
     def set_auth_info(self, identifier_auth):
         
-        #从云端验证
-        if not self.cloud_check_domain(identifier_auth['domain']):
-            self.err = "云端验证失败!"
+        # #从云端验证
+        # if not self.cloud_check_domain(identifier_auth['domain']):
+        #     self.err = "云端验证失败!"
         
         # 是否手动验证DNS
         if identifier_auth['auth_to'] == 'dns':

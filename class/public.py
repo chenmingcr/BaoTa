@@ -2856,7 +2856,8 @@ def run_thread(fun,args = (),daemon=False):
     return True
     
 def check_domain_cloud(domain):
-    run_thread(cloud_check_domain,(domain,))
+    # run_thread(cloud_check_domain,(domain,))
+    pass
     
 def cloud_check_domain(domain):
     '''
